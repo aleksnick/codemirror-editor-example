@@ -1,0 +1,20 @@
+{
+  "name": "sendsay-codemirror-example",
+  "version": "1.0.0",
+  "author": "sendsay",
+  "private": true,
+  "scripts": {
+    "start": "yarn watch & yarn serve",
+    "build": "NODE_ENV=production rollup -c rollup.config.js",
+    "serve": "node --harmony scripts/serve.js",
+    "watch": "node --harmony scripts/watch.js"
+  },
+  "dependencies": {
+    "@codemirror/basic-setup": "^0.18.2",
+    "@codemirror/lang-html": "^0.18.1",
+    "@codemirror/lang-javascript": "^0.18.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "rollup": "^2.52.1",
+    "superstatic": "^7.1.0"
+  }
+}
